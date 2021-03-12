@@ -171,7 +171,7 @@ def make_csv(series, fake_series, generator, epoch, args, path):
         )
 
 
-def derive_metrics(ori_data, gen_data, args):
+def derive_metrics(ori_data, gen_data, generator, args):
   """Derivation of metrics"""
   ori_data = real_data_loading(ori_data, args.ts_dim)
   gen_data = real_data_loading(gen_data, args.ts_dim)

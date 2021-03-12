@@ -251,7 +251,7 @@ def main(args):
         # Plot, Save to CSV file and Derive Metrics #
         plot_series(real, fake, G, args.num_epochs-1, args, args.inference_path)
         make_csv(real, fake, G, args.num_epochs-1, args, args.inference_path)
-        derive_metrics(real, fake, args)
+        derive_metrics(real, fake, G, args)
         
     else:
         raise NotImplementedError
@@ -269,7 +269,7 @@ if __name__ == "__main__":
     parser.add_argument('--column', type=str, default='Appliances', help='which column to generate')
     parser.add_argument('--train_split', type=float, default=0.8, help='train-test split ratio')
 
-    parser.add_argument('--batch_size', type=int, default=256, help='mini-batch size')
+    parser.add_argument('--batch_size', type=int, default=128, help='mini-batch size')
     parser.add_argument('--val_batch_size', type=int, default=1, help='mini-batch size for validation')
     parser.add_argument('--num_epochs', type=int, default=1000, help='total epoch for training')
     parser.add_argument('--log_every', type=int, default=50, help='save log data for every default iteration')
