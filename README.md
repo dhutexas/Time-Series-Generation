@@ -41,7 +41,7 @@ python main.py --mode 'train' --model 'conv' --criterion 'wgangp'
 To handle more arguments, you can refer to [here](https://github.com/hee9joon/Time-Series-Generation/blob/main/main.py#L262).
 
 #### 3) Test
-You can save plot and csv files then derive metrics on the test set.
+You can save plot and csv files then derive metrics on the test set. Please install tensorflow 1.xx to obtain corresponding metrics.
 
 ```
 python main.py --mode 'test'
@@ -55,5 +55,6 @@ python main.py --mode 'test'
 - CUDA 10.2
 - torch 1.6.0
 - torchvision 0.7.0
+- tensorflow 1.15
 - etc
 ```
