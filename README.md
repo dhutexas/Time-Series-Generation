@@ -47,6 +47,10 @@ You can save plot and csv files then derive metrics on the test set. Please **in
 python main.py --mode 'test'
 ```
 
+#### References
+- Metrics for Quantitative Evaluation from **[TimeGAN](https://github.com/jsyoon0823/TimeGAN) (NeurIPS 2019)**
+- Data Pre-processing from **[WGAN_financial_time-series](https://github.com/CasperHogenboom/WGAN_financial_time-series)**
+
 
 ### Development Environment
 ```
