@@ -41,7 +41,7 @@ python main.py --mode 'train' --model 'conv' --criterion 'wgangp'
 To handle more arguments, you can refer to [here](https://github.com/hee9joon/Time-Series-Generation/blob/main/main.py#L262).
 
 #### 3) Test
-You can save plot and csv files then derive metrics on the test set. Please install tensorflow 1.xx to obtain corresponding metrics.
+You can save plot and csv files then derive metrics on the test set. Please **install tensorflow 1.15** to obtain corresponding metrics.
 
 ```
 python main.py --mode 'test'
