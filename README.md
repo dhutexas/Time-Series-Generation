@@ -9,7 +9,7 @@ What this repository supports follows:
 - Implementation of different loss functions, **L2 and WGAN-GP**, for comparsion
 - Calculation of **metrics** proposed by **[TimeGAN](https://papers.nips.cc/paper/2019/hash/c9efe5f26cd17ba6216bbe2a7d26d490-Abstract.html) (NeurIPS 2019)** for quantitative evaluation
 
-The performance seems to depend upon the characteristic of dataset and selection of hyper-parameters.
+The models show bad performance. The performance depends upon the characteristic of dataset and selection of hyper-parameters heavily. 
 
 The dataset used here is **Appliances Energy Prediction Data Set** and can be found [here](https://archive.ics.uci.edu/ml/datasets/Appliances+energy+prediction).
 
@@ -47,7 +47,8 @@ You can save plot and csv files then derive metrics on the test set. Please **in
 python main.py --mode 'test'
 ```
 
-#### References
+
+### References
 - Metrics for Quantitative Evaluation from **[TimeGAN](https://github.com/jsyoon0823/TimeGAN) (NeurIPS 2019)**
 - Data Pre-processing from **[WGAN_financial_time-series](https://github.com/CasperHogenboom/WGAN_financial_time-series)**
 
